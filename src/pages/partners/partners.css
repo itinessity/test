@@ -1,0 +1,46 @@
+.text-block
+{
+  max-width: 50%;
+  height: fit-content;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.text-block-name
+{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.partner-art
+{
+  width: 100%;
+  height: 100%;
+  filter: brightness(1) opacity(0.8) grayscale(1);
+  background-blend-mode: soft-light;
+  transition: 1s linear;
+}
+
+.partner-art:hover
+{
+  filter: none;
+}
+
+
+.partner-art-box
+{
+  height: fit-content;
+  width: 400px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-box {
+  min-height: 100vh;
+}

@@ -1,0 +1,62 @@
+.projects-art
+{
+  width: 100%;
+  height: 100%;
+  filter: brightness(1) opacity(0.8) grayscale(1);
+  background-blend-mode: soft-light;
+  transition: 1s linear;
+}
+
+.projects-art:hover
+{
+  filter: none;
+}
+
+
+.projects-art-box
+{
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+}
+
+.projects-box
+{
+  width: 100%;
+  height: fit-content;
+}
+
+.project-item
+{
+  display: inline;
+  height: fit-content;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.project-item-art
+{
+  filter: brightness(1) opacity(0.8) sepia(1);
+  background-blend-mode: soft-light;
+  transition: 1s linear;
+  width: 200px;
+  height: 100%;
+}
+
+.project-item:hover
+{
+  filter: none;
+}
+
+.text-block
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,31 @@
+.data-box-foot
+{
+  height: 100%;
+}
+
+.copyright
+{
+  text-align: center;
+  padding: 5px;
+}
+
+.icons
+{
+  background-color: #24252a;
+  display: inline;
+  position: relative;
+  opacity: 60%;
+}
+
+.icon-style
+{
+  margin: 5px;
+  transition: all ease 0.5s;
+  cursor : pointer;
+}
+
+.icon-style:hover
+{
+  color: #81040a;
+}
+

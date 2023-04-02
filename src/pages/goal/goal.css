@@ -1,0 +1,27 @@
+.goal-image
+{
+  min-height: 100vh;
+  filter: brightness(1) opacity(0.8) sepia(1);
+  background-blend-mode: soft-light;
+  transition: 1s linear;
+  width: 100%;
+  position: relative;
+}
+
+.goal-image:hover
+{
+  filter: none;
+}
+
+.goal-text
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}

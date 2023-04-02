@@ -1,0 +1,32 @@
+.news-art
+{
+  width: 100%;
+  height: 100%;
+  filter: brightness(1) opacity(0.8) grayscale(1);
+  background-blend-mode: soft-light;
+  transition: 1s linear;
+}
+
+.news-art:hover
+{
+  filter: none;
+}
+
+
+.news-art-box
+{
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+}
+
+.text-block
+{
+  max-width: 500px;
+  height: fit-content;
+  max-height: 30vh;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+.messages_cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #24252a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 15px 0;
+  font-size: 12px;
+}
+.messages_cookies-wrp {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cookie_btn {
+  display: inline-block;
+  margin: 10px 6px 4px 6px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  padding: 4px 12px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #81040a;
+  border: 2px solid #24252a;
+  cursor: pointer;
+}
+.cookie_btn:hover {
+  color: #FFF;
+}
+.cookie_btn:after,
+.cookie_btn:before {
+  position: absolute;
+  height: 2px;
+  left: 50%;
+  background: #FFF;
+  bottom: -6px;
+  content: "";
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.cookie_btn:before {
+  top: -6px;
+}
+.cookie_btn:hover:after,
+.cookie_btn:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+.buttons-cookie
+{
+  text-align: center;
+  justify-content: center;
+}
