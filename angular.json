@@ -91,11 +91,19 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://itinessity.github.io/test/",
+            "name": "Banished",
+            "email": "itinessity@gmai.com"
+          }
         }
       }
     }
   },
   "cli": {
     "analytics": "7a4ec58e-b25b-4c12-b8dc-4d3c6c8e5816"
-  }
+  },
 }

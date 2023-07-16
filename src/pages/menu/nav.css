@@ -1,77 +1,80 @@
 .navbar {
-  overflow: hidden;
-  background-color: #24252a;
-  font-family: "Century Gothic", sans-serif;
+  background-color: black;
   margin: 0;
   z-index: 0;
+  filter: opacity(76%);
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
-.navbar a {
-  font-size: 16px;
-  padding: 14px 16px;
+.banished
+{
+  display: inline-flex;
+  font-size: 25px;
+  vertical-align: middle;
+  padding: 0px;
+  margin: 0px;
+}
+
+.the
+{
+  font-size: 11px;
+  rotate: 270deg;
+  padding-top: 12px;
+}
+
+.menu-item {
+  font-size: 20px;
   text-decoration: none;
-  font-weight: bold;
-  z-index: 0;
+  vertical-align: middle;
+  padding: 5px;
 }
 
-.centered
-{
-  float: none;
-  justify-content: center;
+.menu {
   display: inline-flex;
-  margin: 0;
+  vertical-align: middle;
+  padding: 5px;
 }
 
-.lefted
-{
-  float: none;
-  justify-content: center;
+.logo {
   display: inline-flex;
-  margin: 0;
+  vertical-align: middle;
+  padding: 5px;
 }
 
-.dropdown {
-  overflow: hidden;
-  display: inline-block;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  font-weight: bold;
-  z-index: 100;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
+.hovered:hover {
   color: #81040a;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #24252a;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 100;
+.lk
+{
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 5px;
 }
 
-.dropdown-content a {
-  float: none;
-  padding: 12px 16px;
+.lk-item
+{
+  font-size: 15px;
   text-decoration: none;
-  display: block;
-  text-align: left;
+  vertical-align: baseline;
+  padding: 5px;
 }
 
-.dropdown-content a:hover {
-  color: #81040a;
+.lk-icon
+{
+  text-decoration: none;
+  vertical-align: middle;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.bold-link
+{
+  font-family: UniSansHeavy;
 }
+
+

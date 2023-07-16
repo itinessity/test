@@ -1,21 +1,19 @@
 <div class="navbar">
-  <div class="lefted">
-    <a routerLink="/main/home" >The Banished</a>
-  </div>
-  <div class="centered">
-    <a routerLink="/main/news" >News</a>
-    <a routerLink="/main/goal" >Goal</a>
-
-    <div class="dropdown">
-      <button class="dropbtn" routerLink="/main/projects">Projects
-      </button>
-      <div class="dropdown-content">
-        <a routerLink="/main/projects/banished">Banished series</a>
-      </div>
-
+  <a routerLink="">
+    <div class="logo">
+      <div class="the">The</div> <div class="banished">Banished</div>
     </div>
-
-    <a routerLink="/main/partners" >Partners</a>
+  </a>
+  <div class="menu">
+    <a routerLink="/news" class="menu-item">News</a>
+    <a routerLink="/goal" class="menu-item">Goal</a>
+    <a routerLink="/projects" class="menu-item">Projects</a>
+    <a routerLink="/partners" class="menu-item">Partners</a>
+  </div>
+  <div class="lk">
+    <i class="fa fa-search lk-icon"></i>
+    <a routerLink="/login" class="lk-item bold-link">Sign In</a>
+    <a class="lk-icon">|</a>
+    <a routerLink="/register" class="lk-item bold-link">Join</a>
   </div>
 </div>
-

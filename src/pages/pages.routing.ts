@@ -10,10 +10,10 @@ import {ProjectsComponent} from "./projects/ProjectsComponent";
 
 export  const routes: Routes =
   [
-    {path: 'main', component: PageComponent,
+    {path: '', component: PageComponent,
       children: [
         {
-          path: 'home', component: HomeComponent,
+          path: '', component: HomeComponent,
         },
         {
           path: 'news', component: NewsComponent,

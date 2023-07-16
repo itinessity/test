@@ -4,10 +4,20 @@
   color: #e2e2e2;
 }
 
+@font-face {
+  font-family: UniSansThin; /* Имя шрифта */
+  src: url("assets/Uni Sans Thin.otf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: UniSansHeavy; /* Имя шрифта */
+  src: url("assets/Uni Sans Heavy.otf"); /* Путь к файлу со шрифтом */
+}
+
 body
 {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: UniSansThin, sans-serif;
 }
 
 html,body

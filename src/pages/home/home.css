@@ -1,43 +1,107 @@
+.container
+{
+  height: fit-content;
+  display: grid;
+}
+
 .main-art
 {
   width: 100%;
   height: 100%;
-  filter: brightness(1) opacity(0.8) grayscale(1);
-  background-blend-mode: soft-light;
-  transition: 1s linear;
-}
-
-.main-art:hover
-{
-  filter: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-art-box
 {
   width: 100%;
-  height: fit-content;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  grid-area: 1/1;
 }
 
-.home-block
+.overlay
 {
-  width: 100%;
+  background-color:rgba(0, 0, 0, .7);
   height: 100%;
+  grid-area: 1/1;
+  z-index: 10;
 }
 
-.info-block
+.overlay-content
 {
-  width: 100%;
-  height: fit-content;
+  opacity: 1;
+  margin-top: 500px;
+  margin-bottom: auto;
+  z-index:11;
 }
 
-.item-block
+.title
 {
-  width: 300px;
-  height: 50px;
-  background-color: #e2e2e2;
-  color: #24252a;
-  margin: 5px;
+  font-size: 35px;
+}
+
+.carousel {
+  padding: .3em .3em 0;
+  background: rgb(240,240,240);
   text-align: center;
+}
+
+.carousel span {
   display: inline-block;
-  opacity: 70%;
+  word-spacing: 1em;  /* расстояние между картинками */
+
+  /* прокрутка миниатюр при необходимости */
+  overflow: auto;
+  white-space: nowrap;
+  word-wrap: normal;
+
+}
+.carousel a {
+  position: relative;
+  display: inline-block;
+  max-width: 120px;  /* максимальная ширина миниатюр */
+  width: 25%;  /* ширина миниатюр */
+  border: 1px solid blue;  /* рамка вокруг миниатюр */
+  opacity: .7;
+  text-decoration: none;
+}
+.carousel a:visited,
+.carousel a:nth-of-type(1) {
+  border-color: #555;  /* рамка вокруг миниатюр просмотренных видео */
+}
+.carousel a:hover {
+  opacity: 1;
+}
+.carousel a:not(:active):focus {
+  pointer-events: none;
+}
+.carousel a::before {
+  content: "";
+  position: absolute;
+  top: 0em;
+  right: 0em;
+  bottom: 0em;
+  left: 0em;
+  background: rgba(0,0,1,.1);
+  transition: background 0s 9999999s;
+}
+.carousel a:nth-of-type(1)::before {
+  background: rgba(255,255,254,.7);
+}
+.carousel span:active a::before {
+  background: rgba(0,0,0,0);
+  transition: background 0s;
+}
+.carousel span:active a:active::before {
+  background: rgba(255,255,255,.7);
+  transition: background 0s;
+}
+.carousel img {
+  max-width: 100%;
+  vertical-align: middle;  /* убрать нижний отступ до рамки под картинкой */
 }
