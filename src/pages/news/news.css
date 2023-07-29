@@ -20,13 +20,3 @@
   min-height: 50vh;
 }
 
-.text-block
-{
-  max-width: 500px;
-  height: fit-content;
-  max-height: 30vh;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}

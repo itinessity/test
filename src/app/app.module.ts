@@ -7,10 +7,14 @@ import {AppRoutingModule} from "./app.routing";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
+import {LoginComponent} from "../pages/login/LoginComponent";
+import {RegisterComponent} from "../pages/register/RegisterComponent";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

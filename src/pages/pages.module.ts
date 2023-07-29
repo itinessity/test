@@ -1,4 +1,3 @@
-import {EnterPageComponent} from './enter-page/enter-page.component';
 import {NgModule} from '@angular/core';
 import {PageComponent} from './main-page/page.component';
 import {PagesRoutingModule} from './pages.routing';
@@ -11,11 +10,12 @@ import {GoalComponent} from "./goal/GoalComponent";
 import {PartnersComponent} from "./partners/PartnersComponent";
 import {BanishedComponent} from "./projects/banished/BanishedComponent";
 import {ProjectsComponent} from "./projects/ProjectsComponent";
+import {TermsComponent} from "./terms/TermsComponent";
+import {PolicyComponent} from "./policy/PolycyComponent";
 
 
 @NgModule({
   declarations: [
-    EnterPageComponent,
     PageComponent,
     BannerComponent,
     HomeComponent,
@@ -25,7 +25,9 @@ import {ProjectsComponent} from "./projects/ProjectsComponent";
     GoalComponent,
     PartnersComponent,
     BanishedComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    TermsComponent,
+    PolicyComponent
   ],
   imports: [
     PagesRoutingModule,

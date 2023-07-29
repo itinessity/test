@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  background-color: red;
+  background-color: black;
   height: fit-content;
   width: 100%;
-  min-width: 100vh;
+  min-width: 98vw;
 }
 
 .down

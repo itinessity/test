@@ -1,0 +1,43 @@
+.main
+{
+  background-image: url('/assets/images/decor/home.jpg');
+  background-repeat: round;
+}
+
+.back
+{
+  background-color:rgba(0, 0, 0, .75);
+}
+
+.content
+{
+  opacity: 1;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 5em;
+  height: fit-content;
+  font-family: "Arial Narrow", sans-serif;
+  padding-bottom: 350px;
+}
+
+.content h1
+{
+  font-family: UniSansHeavy, serif;
+}
+
+.content h2 h3
+{
+  font-family: UniSansThin, sans-serif;
+}
+
+.titles
+{
+  margin-top: 10px;
+  margin-bottom: 10px;;
+}
+
+.content a
+{
+  text-decoration: none;
+  font-weight: bolder;
+}

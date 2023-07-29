@@ -7,6 +7,8 @@ import {GoalComponent} from "./goal/GoalComponent";
 import {PartnersComponent} from "./partners/PartnersComponent";
 import {BanishedComponent} from "./projects/banished/BanishedComponent";
 import {ProjectsComponent} from "./projects/ProjectsComponent";
+import {TermsComponent} from "./terms/TermsComponent";
+import {PolicyComponent} from "./policy/PolycyComponent";
 
 export  const routes: Routes =
   [
@@ -32,6 +34,12 @@ export  const routes: Routes =
         },
         {
           path: 'partners', component: PartnersComponent,
+        },
+        {
+          path: 'terms', component: TermsComponent,
+        },
+        {
+          path: 'policy', component: PolicyComponent,
         },
     ]}
   ];
