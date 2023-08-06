@@ -14,18 +14,23 @@
 
 .projects-links
 {
-  margin-top: 70%;
   z-index:11;
   grid-area: 1/1;
-  max-width: 100vw;
+  display: flex;
+  overflow-x: hidden;
+  max-width: 95vw;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 15%;
 }
 
 .projects-item
 {
   display: inline-block;
-  transition: 1s;
+  transition: 1s ease-in-out;
   cursor: pointer;
-  overflow: hidden;
+  max-width: 250px;
+  height: fit-content;
 }
 
 .projects-art-item

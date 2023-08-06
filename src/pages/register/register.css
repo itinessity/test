@@ -8,7 +8,7 @@
   min-height: 100vh;
   font-family: 'Jost', sans-serif;
   background-image: url('/assets/images/decor/home.jpg');
-  background-repeat: round;
+  background-repeat: repeat;
 }
 
 .content

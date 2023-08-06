@@ -17,9 +17,11 @@ export class HomeComponent {
     if (window.scrollY > 250) {
       overlay.style.opacity = '1';
       overlay_content.style.opacity = '1';
+      overlay.style.cursor = "auto";
     } else {
       overlay.style.opacity = '0';
       overlay_content.style.opacity = '0';
+      overlay.style.cursor = "url(\"scroll.png\"), auto"
     }
   }
 }
