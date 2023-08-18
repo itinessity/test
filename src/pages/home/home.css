@@ -32,7 +32,6 @@
   z-index: 10;
   transition: 1s linear;
   opacity: 0;
-  cursor: url("scroll.png"), auto;
 }
 
 .overlay-content
