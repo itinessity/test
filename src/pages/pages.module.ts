@@ -12,6 +12,8 @@ import {BanishedComponent} from "./projects/banished/BanishedComponent";
 import {ProjectsComponent} from "./projects/ProjectsComponent";
 import {TermsComponent} from "./terms/TermsComponent";
 import {PolicyComponent} from "./policy/PolycyComponent";
+import {HeaderComponent} from "./header/head";
+import {MenuComponent} from "./second-menu/menu";
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import {PolicyComponent} from "./policy/PolycyComponent";
     BanishedComponent,
     ProjectsComponent,
     TermsComponent,
-    PolicyComponent
+    PolicyComponent,
+    HeaderComponent,
+    MenuComponent
   ],
   imports: [
     PagesRoutingModule,

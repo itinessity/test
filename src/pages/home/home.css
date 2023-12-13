@@ -1,133 +1,53 @@
-.container
+.containter
 {
-  height: fit-content;
-  display: grid;
+  max-height: 80vh;
+  background-color: #0e0d0b;
 }
 
-.main-art
+.news-content
+{
+  margin: auto auto;
+  max-width: 800px;
+  padding: 25px;
+}
+
+.image-news
+{
+  width: 200px;
+  height: 300px;
+}
+
+.image-news img
 {
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-.main-art-box
+.news-title
 {
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-  opacity: 1;
-  grid-area: 1/1;
+
 }
 
-.overlay
+.news-item
 {
-  background-color:rgba(0, 0, 0, .7);
-  height: 100%;
-  grid-area: 1/1;
-  z-index: 10;
-  transition: 1s linear;
-  opacity: 0;
-}
-
-.overlay-content
-{
-  opacity: 0;
-  margin-top: 48%;
-  margin-bottom: auto;
-  z-index:13;
-  margin-left: 3em;
-  transition: all .3s ease-in-out;
-  max-width: 95vw;
-}
-
-.title
-{
-  font-size: 45px;
-}
-
-.gallery-vid
-{
-  display: flex;
-  overflow-x: auto;
-  width: 100%;
-  align-items: center;
-}
-
-
-.gallery-item
-{
-  background-color: #e2e2e2;
   display: inline-block;
-  margin: 10px;
-  min-width: 300px;
-}
-
-.title-vid
-{
-  color: gray;
-  font-weight: bold;
-  text-align: center;
   margin: 5px;
-  font-size: 17px;
+  box-shadow: 10px 5px 5px #81040a;
+  position: relative;
 }
 
-.desc-vid
+.text-block
 {
-  color: #24252a;
-  padding: 15px;
-  font-weight: bold;
-  text-align: center;
+  position: absolute;
+  background-color: black;
+  color: #e2e2e2;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(85%);
+  padding: 3px;
+  border: #e2e2e2;
+  border-width: 2px;
+  border-style: solid;
   font-size: 15px;
-  font-family: UniSansHeavy, serif;
-}
-
-.image-vid
-{
-  width: 100%;
-}
-
-.image-vid img
-{
-  width: 100%;
-}
-
-.doc-links
-{
-  text-align: center;
-  margin-top: 10px;
-}
-
-.doc-item
-{
-  font-size: 17px;
-  display: inline-block;
-  margin-right: 10px;
-}
-.doc-item a
-{
-  text-decoration: none;
-}
-
-.logo-art
-{
-  width: 100%;
-}
-
-.logo-item
-{
-  max-width: 95px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  opacity: 70%;
-}
-
-.doc-item a:hover
-{
-  color: #666666;
+  border-radius: 7px;
 }

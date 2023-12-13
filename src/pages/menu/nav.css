@@ -22,9 +22,9 @@
 {
   display: inline-flex;
   font-size: 25px;
-  vertical-align: middle;
   padding: 0px;
-  margin: 0px;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .the
@@ -32,6 +32,8 @@
   font-size: 11px;
   rotate: 270deg;
   padding-top: 12px;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .menu-item {
@@ -61,14 +63,14 @@
 {
   display: inline-flex;
   vertical-align: middle;
-  padding: 5px;
 }
 
 .lk-item
 {
   font-size: 15px;
   text-decoration: none;
-  vertical-align: baseline;
+  margin-bottom: auto;
+  margin-top: auto;
   padding: 5px;
 }
 
@@ -80,17 +82,27 @@
 .lk-icon
 {
   text-decoration: none;
-  vertical-align: middle;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 0;
-  padding-right: 0;
   cursor: pointer;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .bold-link
 {
-  font-family: UniSansHeavy;
+  font-family: UniSansThin, sans-serif;
 }
 
 
+.search
+{
+  display: inline-flex;
+  border: #e2e2e2;
+  border-width: 2px;
+  border-style: solid;
+  width: 200px;
+  margin-right: 5px;
+  border-radius: 30px;
+  height: 50%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
