@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-content: space-between;
+  font-family: UniSansThin, sans-serif;
 }
 
 .navbar a:hover
@@ -40,7 +41,8 @@
   font-size: 20px;
   text-decoration: none;
   vertical-align: middle;
-  padding: 5px;
+  padding: 3px;
+  padding-left: 10px;
 }
 
 .menu {
@@ -71,7 +73,8 @@
   text-decoration: none;
   margin-bottom: auto;
   margin-top: auto;
-  padding: 5px;
+  padding: 3px;
+  padding-right: 10px;
 }
 
 .fa-search:hover

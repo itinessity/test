@@ -14,6 +14,13 @@ import {TermsComponent} from "./terms/TermsComponent";
 import {PolicyComponent} from "./policy/PolycyComponent";
 import {HeaderComponent} from "./header/head";
 import {MenuComponent} from "./second-menu/menu";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {EmailSubscribeForm} from "./subscribe/subscribe.component";
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from "@angular/material/button";
+import {MatDividerModule} from "@angular/material/divider";
+
 
 
 @NgModule({
@@ -31,10 +38,17 @@ import {MenuComponent} from "./second-menu/menu";
     TermsComponent,
     PolicyComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    EmailSubscribeForm
   ],
   imports: [
     PagesRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: []

@@ -1,7 +1,7 @@
 .menubar
 {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-template-rows: auto;
   width: 100%;
   background-color: black;
@@ -17,19 +17,6 @@
 .icon-block i
 {
   padding: 2px;
-  cursor: pointer;
-}
-
-.music
-{
-  display: inherit;
-  margin: auto;
-  text-align: center;
-}
-
-.music i
-{
-  padding: 5px;
   cursor: pointer;
 }
 

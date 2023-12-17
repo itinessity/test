@@ -24,7 +24,9 @@
 
 .news-title
 {
-
+  font-family: UniSansThin, sans-serif;
+  font-size: 25px;
+  margin: 10px;
 }
 
 .news-item
@@ -50,4 +52,24 @@
   border-style: solid;
   font-size: 15px;
   border-radius: 7px;
+}
+
+.subs
+{
+  margin: auto auto;
+  max-width: 800px;
+}
+
+.title-subs
+{
+  text-align: center;
+  font-family: UniSansThin, sans-serif;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.mt-divider
+{
+  width: 90%;
+  margin: auto auto;
 }
