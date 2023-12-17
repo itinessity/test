@@ -1,0 +1,32 @@
+.image-news
+{
+  max-width: 300px;
+  margin: 5px;
+}
+
+.image-news img
+{
+  width: 100%;
+}
+
+.text-block
+{
+  position: absolute;
+  background-color: black;
+  color: #e2e2e2;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(65%);
+  padding: 3px;
+  border: #e2e2e2;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.text-block a
+{
+  text-decoration: none;
+}

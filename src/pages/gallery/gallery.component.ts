@@ -2,11 +2,13 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Component } from "@angular/core";
 @Component({
   selector: 'carousel-news-main',
-  templateUrl: './carousel-holder.component.html'
+  templateUrl: './carousel-holder.component.html',
+  styleUrls: ['./gallery.css']
 })
 export class CarouselHolderComponent {
   customOptions: OwlOptions = {
     loop: true,
+    margin: 1,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,

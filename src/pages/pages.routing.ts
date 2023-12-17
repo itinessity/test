@@ -9,6 +9,8 @@ import {BanishedComponent} from "./projects/banished/BanishedComponent";
 import {ProjectsComponent} from "./projects/ProjectsComponent";
 import {TermsComponent} from "./terms/TermsComponent";
 import {PolicyComponent} from "./policy/PolycyComponent";
+import {NewsItem1Component} from "./news/items/item1";
+import {ProductsComponent} from "./products/products";
 
 export  const routes: Routes =
   [
@@ -21,16 +23,19 @@ export  const routes: Routes =
           path: 'news', component: NewsComponent,
         },
         {
-          path: 'goal', component: GoalComponent,
+          path: 'news/1', component: NewsItem1Component,
+        },
+        {
+          path: 'goals', component: GoalComponent,
         },
         {
           path: 'home', component: HomeComponent,
         },
         {
-          path: 'projects', component: ProjectsComponent,
+          path: 'comics', component: ProjectsComponent,
         },
         {
-          path: 'projects/banished', component: BanishedComponent,
+          path: 'movies', component: BanishedComponent,
         },
         {
           path: 'partners', component: PartnersComponent,
@@ -40,6 +45,9 @@ export  const routes: Routes =
         },
         {
           path: 'policy', component: PolicyComponent,
+        },
+        {
+          path: 'products', component: ProductsComponent,
         },
     ]}
   ];

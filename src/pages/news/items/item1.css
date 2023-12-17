@@ -1,23 +1,23 @@
 .wrapper
 {
   background-color: #0e0d0b;
+  padding: 25px;
 }
 
-.text
+.new-wrap
 {
   margin: auto auto;
   max-width: 800px;
   padding: 25px;
-  word-wrap: break-word;
 }
 
-.logo-box
+.art
 {
   margin: auto auto;
   max-width: 600px;
 }
 
-.logo-box img
+.text
 {
-  margin-left: 15px;
+  word-wrap: break-word;
 }

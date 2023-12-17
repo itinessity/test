@@ -1,37 +1,47 @@
-.goal-image
+.wrapper
 {
-  min-height: 100vh;
-  filter: brightness(1) opacity(0.8) sepia(1);
-  background-blend-mode: soft-light;
-  transition: 1s linear;
+  background-color: #0e0d0b;
+}
+
+.card
+{
+  padding: 25px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.card img
+{
   width: 100%;
-  position: relative;
 }
 
-.goal-image:hover
+
+.image-left
 {
-  filter: none;
+  max-width: 300px;
+  grid-area: 1/1;
+  margin: 20px;
 }
 
-.goal-text
+.text-right
 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 500px;
-  height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: 17px;
-  z-index: 12;
+  max-width: 800px;
+  grid-area: 1/2;
+  margin: 20px;
 }
 
-.goal-text p
+
+.image-right
 {
-  padding: 3px;
-  text-shadow: 1px 2px black;
-  z-index: 12;
+  max-width: 300px;
+  grid-area: 1/2;
+  margin: 20px;
+}
+
+.text-left
+{
+  max-width: 800px;
+  grid-area: 1/1;
+  margin: 20px;
 }

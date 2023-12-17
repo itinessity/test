@@ -22,6 +22,12 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatDividerModule} from "@angular/material/divider";
 import {CarouselModule} from "ngx-owl-carousel-o";
 import {CarouselHolderComponent} from "./gallery/gallery.component";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {NewsItem1Component} from "./news/items/item1";
+import {MatCardModule} from "@angular/material/card";
+import {MusicComponent} from "./music/mucis";
+import {ProductsComponent} from "./products/products";
+import {MatTabsModule} from "@angular/material/tabs";
 
 
 
@@ -42,7 +48,10 @@ import {CarouselHolderComponent} from "./gallery/gallery.component";
     HeaderComponent,
     MenuComponent,
     EmailSubscribeForm,
-    CarouselHolderComponent
+    CarouselHolderComponent,
+    NewsItem1Component,
+    MusicComponent,
+    ProductsComponent
   ],
   imports: [
     PagesRoutingModule,
@@ -52,7 +61,10 @@ import {CarouselHolderComponent} from "./gallery/gallery.component";
     MatInputModule,
     MatButtonModule,
     MatDividerModule,
-    CarouselModule
+    CarouselModule,
+    MatTooltipModule,
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: []

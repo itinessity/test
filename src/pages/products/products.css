@@ -1,0 +1,11 @@
+.wrapper
+{
+  background-color: #0e0d0b;
+}
+
+.content
+{
+  margin: auto auto;
+  max-width: 90%;
+  padding: 25px;
+}

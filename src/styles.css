@@ -1,6 +1,4 @@
 @import "~@angular/material/prebuilt-themes/purple-green.css";
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss';
 
 * {
   margin: 0;

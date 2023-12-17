@@ -1,3 +1,15 @@
+.wrapper
+{
+  background-color: #0e0d0b;
+}
+
+.news-blocks
+{
+  margin: auto auto;
+  max-width: 800px;
+  padding: 25px;
+}
+
 .news-art
 {
   width: 100%;
@@ -5,6 +17,7 @@
   filter: brightness(1) opacity(0.8) grayscale(1);
   background-blend-mode: soft-light;
   transition: 1s linear;
+  cursor: help;
 }
 
 .news-art:hover
@@ -12,71 +25,36 @@
   filter: none;
 }
 
-
-.news-art-box
+.news-item
 {
-  width: 100%;
-  height: fit-content;
-  min-height: 50vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
 }
 
-.news-text
+.art-box
 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 500px;
-  height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: 17px;
-  z-index: 12;
+  max-width: 300px;
+  grid-area: 1/1;
+  margin: 20px;
 }
 
-.news-text p
+.text-news-block
 {
-  padding: 3px;
-  text-shadow: 1px 2px black;
-  z-index: 12;
+  max-width: 600px;
+  grid-area: 1/2;
+  margin: 20px;
 }
 
-.button-89 {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #e2e2e2;
-
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 16px;
-
-  border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 100%;
-  margin-top: 1em;
-  cursor: pointer;
+.news-prev-text
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
 }
 
-.button-89:hover,
-.button-89:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
-}
-
-.button-89:active {
-  background: var(--color);
-  color: #fff;
+.new-title
+{
+  font-family: UniSansThin, sans-serif;
+  font-size: 20px;
 }
