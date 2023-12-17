@@ -20,6 +20,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from "@angular/material/button";
 import {MatDividerModule} from "@angular/material/divider";
+import {CarouselModule} from "ngx-owl-carousel-o";
+import {CarouselHolderComponent} from "./gallery/gallery.component";
 
 
 
@@ -39,7 +41,8 @@ import {MatDividerModule} from "@angular/material/divider";
     PolicyComponent,
     HeaderComponent,
     MenuComponent,
-    EmailSubscribeForm
+    EmailSubscribeForm,
+    CarouselHolderComponent
   ],
   imports: [
     PagesRoutingModule,
@@ -49,6 +52,7 @@ import {MatDividerModule} from "@angular/material/divider";
     MatInputModule,
     MatButtonModule,
     MatDividerModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: []
