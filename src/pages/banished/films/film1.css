@@ -1,0 +1,46 @@
+.wrapper
+{
+  background-color: #0e0d0b;
+  padding: 25px;
+}
+
+.title-film
+{
+  font-family: UniSansThin, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin: 10px;
+}
+
+.film-card
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.film-block
+{
+  margin: auto auto;
+  max-width: 800px;
+  padding: 25px;
+}
+
+.title-page
+{
+  grid-area: 1/1;
+  margin: auto;
+}
+
+.title-page img
+{
+  width: 100%;
+}
+
+.description
+{
+  max-width: 600px;
+  grid-area: 1/1;
+  margin: auto auto;
+  padding: 25px;
+}

@@ -1,9 +1,42 @@
 <div class="wrapper">
   <div class="content">
-    <mat-tab-group backgroundColor ="primary" color="accent">
-      <mat-tab label="First">Content 1</mat-tab>
-      <mat-tab label="Second">Content 2</mat-tab>
-      <mat-tab label="Third">Content 3</mat-tab>
-    </mat-tab-group>
+    <div class="page-title"> Our Products </div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="image-block">
+          <img src="./assets/images/decor/p1.webp" matTooltip="Nova Black">
+          <div class="text-block">
+            <a routerLink="/products/1">Learn more</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="image-block">
+          <img src="./assets/images/decor/p1.webp" matTooltip="Nova Black">
+          <div class="text-block">
+            <a routerLink="/products/1">Learn more</a>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="image-block">
+          <img src="./assets/images/decor/p1.webp" matTooltip="Nova Black">
+          <div class="text-block">
+            <a routerLink="/products/1">Learn more</a>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="image-block">
+          <img src="./assets/images/decor/p1.webp" matTooltip="Nova Black">
+          <div class="text-block">
+            <a routerLink="/products/1">Learn more</a>
+          </div>
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
   </div>
 </div>

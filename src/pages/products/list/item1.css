@@ -1,0 +1,45 @@
+.wrapper
+{
+  background-color: #0e0d0b;
+  padding: 25px;
+}
+
+.title-block
+{
+  font-family: UniSansThin, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin: 20px;
+}
+
+.card
+{
+  margin: auto auto;
+  max-width: 800px;
+  padding: 25px;
+  border-style: solid;
+}
+
+.features-block
+{
+  margin: 15px;
+  padding-left: 30px;
+}
+
+.description-block
+{
+  margin: 15px;
+}
+
+.logo-block
+{
+  max-width: 400px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.logo-block img
+{
+  width: 100%;
+}

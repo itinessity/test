@@ -2,18 +2,14 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto;
-  height: fit-content;
-  width: 100%;
-  min-width: 98vw;
+  width: fit-content;
   background-color: black;
 }
 
 .down
 {
   width: 100%;
-  height: fit-content;
   grid-area: 4/1;
-  z-index: 1;
 }
 
 .nav
@@ -27,23 +23,18 @@
 
 .header
 {
-  height: fit-content;
   width: 100%;
   grid-area: 1/1;
-  z-index: 0;
 }
 
 .menu
 {
-  height: fit-content;
   width: 100%;
   grid-area: 2/1;
-  z-index: 1;
 }
 
 .pages
 {
-  height: fit-content;
   width: 100%;
   grid-area: 3/1;
   z-index: 1;

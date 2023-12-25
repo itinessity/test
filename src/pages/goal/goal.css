@@ -19,29 +19,43 @@
 
 .image-left
 {
-  max-width: 300px;
+  max-width: 350px;
   grid-area: 1/1;
-  margin: 20px;
+  margin: auto;
 }
 
 .text-right
 {
   max-width: 800px;
   grid-area: 1/2;
-  margin: 20px;
+  margin: auto;
 }
 
 
 .image-right
 {
-  max-width: 300px;
+  max-width: 350px;
   grid-area: 1/2;
-  margin: 20px;
+  margin: auto;
 }
 
 .text-left
 {
   max-width: 800px;
   grid-area: 1/1;
-  margin: 20px;
+  margin: auto;
+}
+
+.goal-title
+{
+  font-family: UniSansThin, sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.mt-divider
+{
+  width: 90%;
+  margin: auto auto;
 }

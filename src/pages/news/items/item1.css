@@ -21,3 +21,9 @@
 {
   word-wrap: break-word;
 }
+
+.news-art
+{
+  width: 100%;
+  margin: 5px;
+}

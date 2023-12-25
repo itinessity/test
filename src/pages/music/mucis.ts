@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-music-item',
@@ -6,8 +6,27 @@ import {Component} from '@angular/core';
   styleUrls: ['./music.css']
 })
 export class MusicComponent {
+  audio: HTMLAudioElement;
+  isActive: boolean;
 
-  ngOnInit(): void {
+  constructor() {
+    this.audio = new Audio();
+    this.audio.src = "../assets/other/ost.mp3";
+    this.audio.load();
+    this.isActive = false;
   }
-}
 
+  play()
+  {
+    if (!this.isActive) {
+      this.audio.play();
+      this.isActive = true;
+    }
+    else
+    {
+      this.audio.pause();
+      this.isActive = false;
+    }
+  }
+
+}

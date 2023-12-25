@@ -6,6 +6,49 @@
 .content
 {
   margin: auto auto;
-  max-width: 90%;
+  max-width: 1200px;
   padding: 25px;
+}
+
+.image-block
+{
+  max-width: 600px;
+  margin: 5px;
+}
+
+.image-block img
+{
+  width: 100%;
+}
+
+
+.text-block
+{
+  position: absolute;
+  background-color: black;
+  color: #e2e2e2;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(65%);
+  padding: 3px;
+  border: #e2e2e2;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.text-block a
+{
+  text-decoration: none;
+}
+
+
+.page-title
+{
+  font-family: UniSansThin, sans-serif;
+  font-size: 35px;
+  margin: 10px;
+  text-align: center;
 }
