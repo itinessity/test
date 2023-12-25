@@ -11,7 +11,7 @@ export class MusicComponent {
 
   constructor() {
     this.audio = new Audio();
-    this.audio.src = "../assets/other/ost.mp3";
+    this.audio.src = "assets/other/ost.mp3";
     this.audio.load();
     this.isActive = false;
   }
