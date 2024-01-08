@@ -19,7 +19,7 @@
 
 .image-left
 {
-  max-width: 350px;
+  max-width: 300px;
   grid-area: 1/1;
   margin: auto;
 }
@@ -34,7 +34,7 @@
 
 .image-right
 {
-  max-width: 350px;
+  max-width: 300px;
   grid-area: 1/2;
   margin: auto;
 }

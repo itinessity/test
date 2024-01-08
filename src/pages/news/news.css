@@ -17,7 +17,7 @@
   filter: brightness(1) opacity(0.8) grayscale(1);
   background-blend-mode: soft-light;
   transition: 1s linear;
-  cursor: help;
+  cursor: pointer;
 }
 
 .news-art:hover

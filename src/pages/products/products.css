@@ -6,13 +6,13 @@
 .content
 {
   margin: auto auto;
-  max-width: 1200px;
+  max-width: 250px;
   padding: 25px;
 }
 
 .image-block
 {
-  max-width: 600px;
+  max-width: 250px;
   margin: 5px;
 }
 
@@ -49,6 +49,8 @@
 {
   font-family: UniSansThin, sans-serif;
   font-size: 35px;
-  margin: 10px;
   text-align: center;
+  margin: auto auto;
+  max-width: 300px;
+  padding-top: 25px;
 }

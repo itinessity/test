@@ -35,6 +35,12 @@ import {NewsItem3Component} from "./news/items/items3";
 import {Comics1Component} from "./projects/comics/comics1";
 import {Film1Component} from "./banished/films/film1";
 import {Product1Component} from "./products/list/item1";
+import {Film2Component} from "./banished/films/film2";
+import {Film3Component} from "./banished/films/film3";
+import {Film4Component} from "./banished/films/film4";
+import {Comics4Component} from "./projects/comics/comics4";
+import {Comics3Component} from "./projects/comics/comics3";
+import {Comics2Component} from "./projects/comics/comics2";
 
 
 
@@ -63,7 +69,13 @@ import {Product1Component} from "./products/list/item1";
     NewsItem3Component,
     Comics1Component,
     Film1Component,
-    Product1Component
+    Product1Component,
+    Film2Component,
+    Film3Component,
+    Film4Component,
+    Comics4Component,
+    Comics3Component,
+    Comics2Component
   ],
   imports: [
     PagesRoutingModule,
