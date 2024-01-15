@@ -1,6 +1,8 @@
 <div class="wrapper">
 
+
   <button mat-icon-button (click)="play()">
-    <mat-icon>play_circle</mat-icon>
+    <div *ngIf=!this.isActive><mat-icon>play_circle</mat-icon></div>
+    <div *ngIf=this.isActive><mat-icon>pause_circle</mat-icon></div>
   </button>
 </div>

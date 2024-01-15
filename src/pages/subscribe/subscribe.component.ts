@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 import {ErrorStateMatcher} from '@angular/material/core';
-import {catchError} from "rxjs";
-
+import {MatButtonModule} from "@angular/material/button";
+import {
+  MatSnackBar,
+  MatSnackBarAction,
+  MatSnackBarActions,
+  MatSnackBarLabel,
+  MatSnackBarRef
+} from "@angular/material/snack-bar";
 
 interface MailChimpResponse {
   result: string;
@@ -19,9 +25,8 @@ export class EmailSubscribeForm {
 
   submitted = false;
   mailChimpEndpoint = 'https://the-banished.us21.list-manage.com/subscribe/post-json?u=aa13a26086f34e69f3e1a6c85&amp;id=9c172380ae&amp;f_id=007ef0e6f0';
-  error = '';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private _snackBar: MatSnackBar) { }
 
   // reactive form components
   emailControl = new FormControl('', [
@@ -30,36 +35,32 @@ export class EmailSubscribeForm {
   ]);
 
   matcher = new MyErrorStateMatcher();
+  durationInSeconds = 3;
 
   async submit() {
-    this.error = '';
     if (this.emailControl.status === 'VALID') {
-      console.info("Subscription started for " + this.emailControl.value);
+      const params = new HttpParams()
+        .set('EMAIL', this.emailControl.value ?? "")
+        .set('b_aa13a26086f34e69f3e1a6c85_9c172380ae', '');
 
-      let url = "https://us21.api.mailchimp.com/3.0/lists/9c172380ae/members";
+      const mailChimpUrl = this.mailChimpEndpoint + "&"+ params.toString();
 
-      let body = {
-        "email_address": this.emailControl.value,
-        "status": "subscribed",
-      };
+      this.http.jsonp<MailChimpResponse>(mailChimpUrl, 'c')
+        .subscribe(response => {
+          if (response.result && response.result !== 'error') {
+            this.submitted = true;
 
-      let httpOptions = await this.getHttpHeader();
-
-      this.http.post<MailChimpResponse>(url, body, httpOptions)
-        .subscribe(data => console.info(data));
-
+            this._snackBar.open(response.msg, "Close", {
+              duration: this.durationInSeconds * 1000,
+            });
+          }
+          else {
+            this._snackBar.open(response.msg, "Close", {
+              duration: this.durationInSeconds * 1000,
+            });
+          }
+        });
     }
-  }
-
-  private async getHttpHeader() {
-    const rheaders = new HttpHeaders({
-      'Content-Type': 'application/json' ,
-      'Authorization': 'Basic a2V5OjllYzg0MDk4NDI4YzQ5MmNmMzM0MGRiYmQxNzk2NTc2LXVzMjE=',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-      'Access-Control-Allow-Headers':'X-Requested-With',
-    });
-    return { headers: rheaders };
   }
 
 }
