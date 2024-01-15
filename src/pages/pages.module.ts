@@ -41,6 +41,8 @@ import {Film4Component} from "./banished/films/film4";
 import {Comics4Component} from "./projects/comics/comics4";
 import {Comics3Component} from "./projects/comics/comics3";
 import {Comics2Component} from "./projects/comics/comics2";
+import {Comics5Component} from "./projects/comics/comics5";
+import {Comics6Component} from "./projects/comics/comics6";
 
 
 
@@ -75,7 +77,9 @@ import {Comics2Component} from "./projects/comics/comics2";
     Film4Component,
     Comics4Component,
     Comics3Component,
-    Comics2Component
+    Comics2Component,
+    Comics5Component,
+    Comics6Component
   ],
   imports: [
     PagesRoutingModule,

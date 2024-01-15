@@ -22,6 +22,8 @@ import {Film4Component} from "./banished/films/film4";
 import {Comics2Component} from "./projects/comics/comics2";
 import {Comics3Component} from "./projects/comics/comics3";
 import {Comics4Component} from "./projects/comics/comics4";
+import {Comics5Component} from "./projects/comics/comics5";
+import {Comics6Component} from "./projects/comics/comics6";
 
 export  const routes: Routes =
   [
@@ -62,6 +64,12 @@ export  const routes: Routes =
         },
         {
           path: 'comics/4', component: Comics4Component,
+        },
+        {
+          path: 'comics/5', component: Comics5Component,
+        },
+        {
+          path: 'comics/6', component: Comics6Component,
         },
         {
           path: 'movies', component: BanishedComponent,

@@ -1,16 +1,22 @@
 <div class="wrapper">
-
-  <div class="title-comics">The Banished</div>
-  <div class="comics-block">
-    <div class="comics-card">
-      <div class="title-page">
-        <img src="./assets/images/decor/c2.jpg">
+  <div class="stories">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <div class="image-comics" matTooltip="Read more">
+        <a routerLink="/comics/5"><div class="comics-title">Baal's Academy</div>
+          <img src="./assets/images/decor/c1.webp">
+          <div class="text-block">Baal's Academy</div></a>
       </div>
-      <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius, odio vitae blandit cursus, libero felis blandit nibh, sit amet pellentesque urna quam pellentesque sapien. Vestibulum condimentum lorem urna, id fermentum nulla suscipit sit amet. Suspendisse tristique mattis justo sed posuere. Aenean in lorem ante. Sed consequat ipsum ante, vel pretium lectus venenatis ac. Praesent efficitur vitae urna vitae accumsan. Vestibulum ultrices ante velit, vitae finibus quam sollicitudin in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque et neque faucibus, ultrices nibh id, ultrices lacus.
-        <br><br>
-        <button mat-flat-button role="button" routerLink="/comics">Return</button>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="image-comics">
+        <a routerLink="/comics/6"><div class="comics-title">Vector's Story</div>
+          <img src="./assets/images/decor/c1.webp" matTooltip="Read more">
+          <div class="text-block">Vector's Story</div></a>
       </div>
-    </div>
+    </ng-template>
+  </owl-carousel-o>
   </div>
+
+  <button mat-button role="button" routerLink="/comics" class="button-block">Return</button>
 </div>

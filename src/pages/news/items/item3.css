@@ -9,7 +9,10 @@
   margin: auto auto;
   max-width: 800px;
   padding: 25px;
-  background-color: black;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e2e2e2;
+  border-width: 2px;
 }
 
 .art

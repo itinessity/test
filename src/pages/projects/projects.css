@@ -34,3 +34,16 @@
   margin-bottom: 10px;
   text-decoration: none;
 }
+
+.text-block
+{
+  position: absolute;
+  color: #e2e2e2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: UniSansThin, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}

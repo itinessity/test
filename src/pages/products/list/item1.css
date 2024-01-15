@@ -28,7 +28,7 @@
 
 .description-block
 {
-  margin: 15px;
+  margin: 30px;
 }
 
 .logo-block
@@ -42,4 +42,10 @@
 .logo-block img
 {
   width: 100%;
+}
+
+
+.button-action
+{
+  margin-top: 10px;
 }
