@@ -1,6 +1,6 @@
-<mat-form-field class="email-form-full-width">
+<mat-form-field class="email-form-full-width" appearance="outline">
   <mat-label>Email</mat-label>
   <input type="email" matInput [formControl]="emailControl" [errorStateMatcher]="matcher"
          placeholder="Ex. pat@example.com">
-  <button matSuffix mat-flat-button color="primary" class="email-btn"  type="button" [disabled]="emailControl.invalid" (click)="submit()">Submit</button>
+  <button matSuffix mat-flat-button class="email-btn"  type="button" [disabled]="emailControl.invalid" (click)="submit()">Submit</button>
 </mat-form-field>

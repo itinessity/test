@@ -49,6 +49,7 @@ export class EmailSubscribeForm {
         .subscribe(response => {
           if (response.result && response.result !== 'error') {
             this.submitted = true;
+            this.emailControl.setValue("");
 
             this._snackBar.open(response.msg, "Close", {
               duration: this.durationInSeconds * 1000,

@@ -7,7 +7,7 @@
 {
   padding: 25px;
   display: grid;
-  grid-template-columns:  50% 50%;
+  grid-template-columns:  auto auto;
   grid-template-rows: auto;
 }
 
@@ -34,9 +34,9 @@
 
 .text-left
 {
-  max-width: 1200px;
+  max-width: 600px;
   padding: 30px;
-  margin: auto;
+  margin: auto auto;
   transition: transform 0.3s ease-in-out;
   grid-area: 1/1;
 }
@@ -48,9 +48,9 @@
 
 .text-right
 {
-  max-width: 1200px;
+  max-width: 600px;
   padding: 30px;
-  margin: auto;
+  margin: auto auto;
   transition: transform 0.3s ease-in-out;
   grid-area: 1/2;
 }

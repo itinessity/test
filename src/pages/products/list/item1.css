@@ -53,11 +53,8 @@
 }
 .logo-1 p {
   font-size: 14px;
-  letter-spacing: 8px;
   text-transform: uppercase;
-  padding-left: 10px;
-  color: #34495e;
+  color: #666666;
   font-weight: 600;
   margin: 0;
-  padding: 0;
 }
