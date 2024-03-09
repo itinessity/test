@@ -43,6 +43,7 @@ import {Comics3Component} from "./projects/comics/comics3";
 import {Comics2Component} from "./projects/comics/comics2";
 import {Comics5Component} from "./projects/comics/comics5";
 import {Comics6Component} from "./projects/comics/comics6";
+import {NewsItem4Component} from "./news/items/item4";
 
 
 
@@ -79,7 +80,8 @@ import {Comics6Component} from "./projects/comics/comics6";
     Comics3Component,
     Comics2Component,
     Comics5Component,
-    Comics6Component
+    Comics6Component,
+    NewsItem4Component
   ],
   imports: [
     PagesRoutingModule,

@@ -24,6 +24,7 @@ import {Comics3Component} from "./projects/comics/comics3";
 import {Comics4Component} from "./projects/comics/comics4";
 import {Comics5Component} from "./projects/comics/comics5";
 import {Comics6Component} from "./projects/comics/comics6";
+import {NewsItem4Component} from "./news/items/item4";
 
 export  const routes: Routes =
   [
@@ -43,6 +44,9 @@ export  const routes: Routes =
         },
         {
           path: 'news/3', component: NewsItem3Component,
+        },
+        {
+          path: 'news/4', component: NewsItem4Component,
         },
         {
           path: 'goals', component: GoalComponent,

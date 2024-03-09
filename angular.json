@@ -99,9 +99,9 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://itinessity.github.io/test/",
+            "baseHref": "/",
             "name": "Banished",
-            "email": "itinessity@gmai.com"
+            "email": "itinessity@gmail.com"
           }
         }
       }
