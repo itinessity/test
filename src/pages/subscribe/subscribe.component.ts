@@ -1,14 +1,9 @@
-import {Component, inject} from '@angular/core';
+import {Component} from '@angular/core';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {ErrorStateMatcher} from '@angular/material/core';
-import {MatButtonModule} from "@angular/material/button";
 import {
   MatSnackBar,
-  MatSnackBarAction,
-  MatSnackBarActions,
-  MatSnackBarLabel,
-  MatSnackBarRef
 } from "@angular/material/snack-bar";
 
 interface MailChimpResponse {

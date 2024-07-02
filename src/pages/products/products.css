@@ -6,14 +6,14 @@
 .content
 {
   margin: auto auto;
-  max-width: 200px;
-  padding: 25px;
+  max-width: 15em;
+  padding: 5em;
 }
 
 .image-block
 {
-  max-width: 200px;
-  margin: 5px;
+  max-width: 15em;
+  margin: 0.5em;
 }
 
 .image-block img
