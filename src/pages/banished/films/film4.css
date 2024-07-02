@@ -10,6 +10,7 @@
   font-size: 35px;
   text-align: center;
   margin: 10px;
+  filter: opacity(1);
 }
 
 .film-card
@@ -40,9 +41,34 @@
 .description
 {
   max-width: 600px;
+  min-width: 300px;
   grid-area: 1/1;
   margin: auto auto;
   padding: 25px;
-  filter: opacity(65%);
-  background-color: black;
+  background-color: rgba(0,0,0,.65);
+}
+
+.title-year
+{
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: darkgrey;
+}
+
+.title-genre
+{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.title-status
+{
+  font-style: italic;
+  color: darkgrey;
+  font-size: 16px;
+}
+
+.description-text
+{
+  opacity: 1;
 }

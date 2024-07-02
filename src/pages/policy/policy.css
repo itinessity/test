@@ -35,3 +35,8 @@
   text-decoration: none;
   font-weight: bolder;
 }
+
+.content a:hover
+{
+  color: #666666;
+}

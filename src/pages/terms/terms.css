@@ -68,3 +68,8 @@
 .button-31:focus {
   opacity: .75;
 }
+
+.content a:hover
+{
+  color: #666666;
+}

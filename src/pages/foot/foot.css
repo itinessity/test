@@ -17,3 +17,8 @@
   text-decoration: none;
   padding: 5px;
 }
+
+.content-box a:hover
+{
+  color: #666666;
+}

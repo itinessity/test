@@ -6,20 +6,23 @@
 .text
 {
   margin: auto auto;
-  max-width: 800px;
-  padding: 25px;
+  max-width: 60vw;
+  padding: 3em;
   word-wrap: break-word;
 }
 
 .logo-box
 {
   margin: auto auto;
-  max-width: 600px;
+  max-width: 50vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
 }
 
 .logo-box img
 {
-  margin: 15px;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 10em;
+  max-height: 10em;
+  padding: 2em;
 }
